@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PClock",
+					"strict" : false
+				},
+				{
+					"name" : "Resetn",
+					"strict" : false
+				},
+				{
+					"name" : "Run",
+					"strict" : false
+				},
+				{
+					"name" : "MClock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

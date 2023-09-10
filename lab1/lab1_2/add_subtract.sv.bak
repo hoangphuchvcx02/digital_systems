@@ -1,0 +1,23 @@
+module add_subtract (
+	input [7:0] A,
+	input clk_i,
+	output [7:0] Result
+);
+
+	logic Cin;
+	logic Result_temp;
+	
+	always @(posedge clk_i) begin
+		if (Cin == 1'b1) 
+			Result_temp <= Result - A;
+		else
+			Result_temp <= Result + A;
+	end
+		
+	always @(posedge clk_i) begin
+		Result <= Result_temp;
+		Cin <= ~ Cin;
+	end
+
+endmodule 	
+		

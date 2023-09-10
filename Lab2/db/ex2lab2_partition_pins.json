@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
+					"name" : "ledr3",
+					"strict" : false
+				},
+				{
+					"name" : "ledr2",
+					"strict" : false
+				},
+				{
+					"name" : "ledr1",
+					"strict" : false
+				},
+				{
+					"name" : "ledr0",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "w",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

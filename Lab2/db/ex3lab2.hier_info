@@ -1,0 +1,79 @@
+|ex3lab2
+clock => clock.IN8
+rst => rst.IN8
+X => X.IN1
+L1 <= L1.DB_MAX_OUTPUT_PORT_TYPE
+L2 <= L2.DB_MAX_OUTPUT_PORT_TYPE
+L3 <= L3.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= reg_dff:dff_4.q
+L5 <= L5.DB_MAX_OUTPUT_PORT_TYPE
+L6 <= L6.DB_MAX_OUTPUT_PORT_TYPE
+L7 <= L7.DB_MAX_OUTPUT_PORT_TYPE
+L8 <= reg_dff:dff_8.q
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_1
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_2
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_3
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_4
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_5
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_6
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_7
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3lab2|reg_dff:dff_8
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+not_q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

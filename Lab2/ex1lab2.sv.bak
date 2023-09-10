@@ -1,0 +1,46 @@
+module ex1lab2(
+input w,clk,rst,
+output Y,ledr8,ledr7,ledr6,ledr5,ledr4,ledr3,ledr2,ledr1,ledr0
+);
+
+logic D8, D7, D6, D5, D4, D3, D2, D1, D0;
+logic Q8, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0;
+logic Q8_bar, Q7_bar, Q6_bar, Q5_bar, Q4_bar, Q3_bar, Q2_bar, Q1_bar, Q0_bar;
+logic n_rst;
+assign n_rst = !rst;
+
+D_flipflop ff0(.clk(clk),.reset(n_rst),.D(D0),.Q(Q0),.Q_bar(Q0_bar));
+D_flipflop ff1(.clk(clk),.reset(n_rst),.D(D1),.Q(Q1),.Q_bar(Q1_bar));
+D_flipflop ff2(.clk(clk),.reset(n_rst),.D(D2),.Q(Q2),.Q_bar(Q2_bar));
+D_flipflop ff3(.clk(clk),.reset(n_rst),.D(D3),.Q(Q3),.Q_bar(Q3_bar));
+D_flipflop ff4(.clk(clk),.reset(n_rst),.D(D4),.Q(Q4),.Q_bar(Q4_bar));
+D_flipflop ff5(.clk(clk),.reset(n_rst),.D(D5),.Q(Q5),.Q_bar(Q5_bar));
+D_flipflop ff6(.clk(clk),.reset(n_rst),.D(D6),.Q(Q6),.Q_bar(Q6_bar));
+D_flipflop ff7(.clk(clk),.reset(n_rst),.D(D7),.Q(Q7),.Q_bar(Q7_bar));
+D_flipflop ff8(.clk(clk),.reset(n_rst),.D(D8),.Q(Q8),.Q_bar(Q8_bar));
+
+
+assign D0 = 0;
+
+assign D1 = (Q4_bar & Q3_bar & Q2_bar & Q1_bar & (!w)) & ((Q8_bar & Q7_bar & Q6_bar & Q5_bar & Q0) | (Q8_bar & Q7_bar & Q6_bar & Q5 & Q0_bar) | (Q8_bar & Q7_bar & Q6 & Q5_bar & Q0_bar) | (Q8_bar & Q7 & Q6_bar & Q5_bar & Q0_bar) | (Q8 & Q7_bar & Q6_bar & Q5_bar & Q0_bar));
+assign D2 = (Q8_bar & Q7_bar & Q6_bar & Q5_bar & Q4_bar & Q3_bar & Q2_bar & Q1 & Q0_bar & (!w));
+assign D3 = (Q8_bar & Q7_bar & Q6_bar & Q5_bar & Q4_bar & Q3_bar & Q2 & Q1_bar & Q0_bar & (!w));
+assign D4 = (Q8_bar & Q7_bar & Q6_bar & Q5_bar & Q2_bar & Q1_bar & Q0_bar & (!w)) & ((Q4_bar & Q3) | (Q4 & Q3_bar));
+
+assign D5 = (Q8_bar & Q7_bar & Q6_bar & Q5_bar & w) & ((Q4_bar & Q3_bar & Q2_bar & Q1_bar & Q0) | (Q4_bar & Q3_bar & Q2_bar & Q1 & Q0_bar) | (Q4_bar & Q3_bar & Q2 & Q1_bar & Q0_bar) | (Q4_bar & Q3 & Q2_bar & Q1_bar & Q0_bar) | (Q4 & Q3_bar & Q2_bar & Q1_bar & Q0_bar));
+assign D6 = (Q8_bar & Q7_bar & Q6_bar & Q5 & Q4_bar & Q3_bar & Q2_bar & Q1_bar & Q0_bar & w);
+assign D7 = (Q8_bar & Q7_bar & Q6 & Q5_bar & Q4_bar & Q3_bar & Q2_bar & Q1_bar & Q0_bar & w);
+assign D8 = (Q6_bar & Q5_bar & Q4_bar & Q3_bar & Q2_bar & Q1_bar & Q0_bar & w) & ((Q8_bar & Q7) | (Q8 & Q7_bar));
+
+assign Y = Q7_bar & Q6_bar & Q5_bar & Q3_bar & Q2_bar & Q1_bar & Q0_bar;
+assign ledr0 = Q0;		//LEDR assignment for 9 D-FFs
+assign ledr1 = Q1;
+assign ledr2 = Q2;
+assign ledr3 = Q3;
+assign ledr4 = Q4;
+assign ledr5 = Q5;
+assign ledr6 = Q6;
+assign ledr7 = Q7;
+assign ledr8 = Q8;
+
+endmodule

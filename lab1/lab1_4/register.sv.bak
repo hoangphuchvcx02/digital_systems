@@ -1,0 +1,19 @@
+module register (
+    input clk_i,
+    input rst_n,
+    input ea,
+    input [7:0] D,
+    output [7:0] Q
+);
+	reg [7:0] reg_data;
+
+always_ff @(posedge clk_i, negedge rst_n) begin
+    if (~rst_n) 
+        reg_data <= 8'b00000000;
+    else if (ea) 
+        reg_data <= D;
+end
+
+	assign Q = reg_data;
+
+endmodule

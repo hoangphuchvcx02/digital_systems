@@ -1,0 +1,12 @@
+
+State Machine - |ex2lab2_run|ex2lab2:gate|currentState
+Name currentState.H currentState.G currentState.F currentState.E currentState.D currentState.C currentState.B currentState.A currentState.I 
+currentState.A 0 0 0 0 0 0 0 0 0 
+currentState.B 0 0 0 0 0 0 1 1 0 
+currentState.C 0 0 0 0 0 1 0 1 0 
+currentState.D 0 0 0 0 1 0 0 1 0 
+currentState.E 0 0 0 1 0 0 0 1 0 
+currentState.F 0 0 1 0 0 0 0 1 0 
+currentState.G 0 1 0 0 0 0 0 1 0 
+currentState.H 1 0 0 0 0 0 0 1 0 
+currentState.I 0 0 0 0 0 0 0 1 1 

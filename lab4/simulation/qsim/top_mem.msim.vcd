@@ -1,0 +1,415 @@
+$comment
+	File created using the following command:
+		vcd file top_mem.msim.vcd -direction
+$end
+$date
+	Thu Apr 20 15:06:49 2023
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module top_mem_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " RST $end
+$var wire 1 # DATAOUT [8] $end
+$var wire 1 $ DATAOUT [7] $end
+$var wire 1 % DATAOUT [6] $end
+$var wire 1 & DATAOUT [5] $end
+$var wire 1 ' DATAOUT [4] $end
+$var wire 1 ( DATAOUT [3] $end
+$var wire 1 ) DATAOUT [2] $end
+$var wire 1 * DATAOUT [1] $end
+$var wire 1 + DATAOUT [0] $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 3 CLK~input_o $end
+$var wire 1 4 CLK~inputCLKENA0_outclk $end
+$var wire 1 5 getaddress|ADDRESS[0]~3_combout $end
+$var wire 1 6 RST~input_o $end
+$var wire 1 7 getdata|rom~9_combout $end
+$var wire 1 8 getaddress|ADDRESS[1]~DUPLICATE_q $end
+$var wire 1 9 getaddress|ADDRESS[2]~1_combout $end
+$var wire 1 : getaddress|ADDRESS[2]~DUPLICATE_q $end
+$var wire 1 ; getaddress|ADDRESS[3]~2_combout $end
+$var wire 1 < getaddress|ADDRESS[4]~0_combout $end
+$var wire 1 = getdata|rom~0_combout $end
+$var wire 1 > getdata|rom~1_combout $end
+$var wire 1 ? getdata|rom~2_combout $end
+$var wire 1 @ getdata|rom~3_combout $end
+$var wire 1 A getaddress|ADDRESS[3]~DUPLICATE_q $end
+$var wire 1 B getdata|rom~4_combout $end
+$var wire 1 C getdata|rom~5_combout $end
+$var wire 1 D getdata|rom~6_combout $end
+$var wire 1 E getdata|rom~7_combout $end
+$var wire 1 F getdata|rom~8_combout $end
+$var wire 1 G getdata|DATAOUT [8] $end
+$var wire 1 H getdata|DATAOUT [7] $end
+$var wire 1 I getdata|DATAOUT [6] $end
+$var wire 1 J getdata|DATAOUT [5] $end
+$var wire 1 K getdata|DATAOUT [4] $end
+$var wire 1 L getdata|DATAOUT [3] $end
+$var wire 1 M getdata|DATAOUT [2] $end
+$var wire 1 N getdata|DATAOUT [1] $end
+$var wire 1 O getdata|DATAOUT [0] $end
+$var wire 1 P getaddress|ADDRESS [4] $end
+$var wire 1 Q getaddress|ADDRESS [3] $end
+$var wire 1 R getaddress|ADDRESS [2] $end
+$var wire 1 S getaddress|ADDRESS [1] $end
+$var wire 1 T getaddress|ADDRESS [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+04
+15
+16
+07
+08
+09
+0:
+0;
+0<
+0=
+1>
+1?
+1@
+0A
+0B
+1C
+1D
+0E
+0F
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0T
+0S
+0R
+0Q
+0P
+$end
+#50000
+1!
+13
+14
+1T
+1I
+1J
+1L
+1M
+1N
+1*
+1)
+1(
+1&
+1%
+1F
+0D
+0C
+1B
+0@
+1=
+17
+05
+#100000
+0!
+03
+04
+#150000
+1!
+13
+14
+18
+1S
+0T
+1G
+0I
+0J
+1K
+0L
+1O
+1+
+0(
+1'
+0&
+0%
+1#
+0F
+1E
+1D
+1C
+0>
+15
+#200000
+0!
+03
+04
+#250000
+1!
+13
+14
+1T
+0G
+1H
+1I
+1J
+0N
+0*
+1&
+1%
+1$
+0#
+1F
+0E
+0C
+1@
+0?
+19
+07
+05
+#300000
+0!
+03
+04
+#350000
+1!
+13
+14
+1:
+1R
+08
+0S
+0T
+1G
+0H
+0J
+1L
+0M
+0)
+1(
+0&
+0$
+1#
+1E
+0B
+15
+#400000
+0!
+03
+04
+#450000
+1!
+13
+14
+1T
+1H
+0K
+0'
+1$
+0F
+0D
+1C
+0@
+1?
+1>
+17
+05
+#500000
+0!
+03
+04
+#550000
+1!
+13
+14
+18
+1S
+0T
+0G
+0I
+1J
+0L
+1M
+1N
+1*
+1)
+0(
+1&
+0%
+0#
+1F
+1@
+0?
+0>
+0=
+15
+#600000
+0!
+03
+04
+#650000
+1!
+13
+14
+1T
+1G
+1L
+0M
+0N
+0O
+0+
+0*
+0)
+1(
+1#
+0F
+0E
+1D
+0C
+0@
+1?
+1>
+1=
+1;
+09
+07
+05
+#700000
+0!
+03
+04
+#750000
+1!
+13
+14
+1A
+1Q
+0:
+0R
+08
+0S
+0T
+0G
+0H
+1I
+0J
+0L
+1M
+1N
+1O
+1+
+1*
+1)
+0(
+0&
+1%
+0$
+0#
+1F
+0D
+1C
+1@
+0?
+0=
+15
+#800000
+0!
+03
+04
+#850000
+1!
+13
+14
+1T
+1G
+0I
+1J
+1L
+0M
+0O
+0+
+0)
+1(
+1&
+0%
+1#
+0F
+1E
+1D
+0C
+1B
+0>
+1=
+17
+05
+#900000
+0!
+03
+04
+#950000
+1!
+13
+14
+18
+1S
+0T
+0G
+1H
+1I
+0J
+1K
+0N
+1O
+1+
+0*
+1'
+0&
+1%
+1$
+0#
+1F
+0E
+1C
+0B
+1?
+1>
+0=
+15
+#1000000

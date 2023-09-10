@@ -1,0 +1,13 @@
+module top_mem(
+input logic CLK,
+input logic [4:0] ADDRESS,
+output logic [8:0] DATA
+);
+
+
+MyROM U0(
+.CLK (CLK),
+.ADDRESS(ADDRESS),
+.DATAOUT(DATA)
+);
+endmodule

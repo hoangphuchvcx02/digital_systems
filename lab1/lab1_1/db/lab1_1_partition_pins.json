@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S[7]",
+					"strict" : false
+				},
+				{
+					"name" : "V",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_system",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n_system",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

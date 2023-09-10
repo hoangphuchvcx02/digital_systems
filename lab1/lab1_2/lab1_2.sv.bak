@@ -1,0 +1,34 @@
+module lab1_2(
+	input clk_sys, rst_sys,
+	input [7:0] A,
+	output [16:0] Result,
+);	
+
+	wire [7:0] reg2addsub1;
+	wire [7:0] reg2addsub2;
+	wire [7:0] addsub2reg;
+	
+	assign Result = reg2addsub2;
+	
+	register r1(
+		.rst_n(rst_sys),
+		.clk_i(clk_sys),
+		.data_in(A),
+		.data_out(reg2addsub1)
+	);
+	
+	add_subtract a0(
+		.clk_i(clk_sys),
+		.A(reg2addsub1),
+		.B(reg2addsub2),
+		.Result(addsub2reg)
+	);
+
+	register r1(
+		.rst_n(rst_sys),
+		.clk_i(clk_sys),
+		.data_in(addsub2reg),
+		.data_out(reg2addsub1)
+	);
+	
+endmodule 

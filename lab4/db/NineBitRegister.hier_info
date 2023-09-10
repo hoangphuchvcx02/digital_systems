@@ -1,0 +1,39 @@
+|NineBitRegister
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+enable => Q[0]~reg0.ENA
+enable => Q[1]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[4]~reg0.ENA
+enable => Q[5]~reg0.ENA
+enable => Q[6]~reg0.ENA
+enable => Q[7]~reg0.ENA
+enable => Q[8]~reg0.ENA
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+R[4] => Q[4]~reg0.DATAIN
+R[5] => Q[5]~reg0.DATAIN
+R[6] => Q[6]~reg0.DATAIN
+R[7] => Q[7]~reg0.DATAIN
+R[8] => Q[8]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

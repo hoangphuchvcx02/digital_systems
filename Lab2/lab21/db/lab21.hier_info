@@ -1,0 +1,45 @@
+|lab21
+SW[0] => shifter[0].PRESET
+SW[0] => shifter[1].ACLR
+SW[0] => shifter[2].PRESET
+SW[0] => shifter[3].ACLR
+SW[0] => z.ACLR
+SW[0] => State~3.DATAIN
+SW[1] => shifter[0].DATAIN
+SW[1] => Selector2.IN2
+SW[1] => State.DATAB
+SW[1] => State.DATAB
+SW[1] => Selector3.IN1
+SW[1] => Selector0.IN1
+SW[1] => State.DATAB
+SW[1] => State.DATAB
+SW[1] => Selector1.IN1
+KEY[0] => shifter[0].CLK
+KEY[0] => shifter[1].CLK
+KEY[0] => shifter[2].CLK
+KEY[0] => shifter[3].CLK
+KEY[0] => z.CLK
+KEY[0] => State~1.DATAIN
+KEY[1] => ~NO_FANOUT~
+LEDG[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= <GND>
+LEDR[0] <= LEDR[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= <GND>
+LEDR[10] <= <GND>
+LEDR[11] <= <GND>
+LEDR[12] <= <GND>
+LEDR[13] <= <GND>
+LEDR[14] <= <GND>
+LEDR[15] <= <GND>
+LEDR[16] <= <GND>
+LEDR[17] <= <GND>
+
+

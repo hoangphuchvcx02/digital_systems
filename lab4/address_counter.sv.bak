@@ -1,0 +1,14 @@
+module address_counter(
+input CLK, RST,
+input [4:0] INIT_ADDRESS,
+output [4:0] ADDRESS
+);
+
+initial ADDRESS = INIT_ADDRESS;
+
+always @ (posedge CLK or negedge RST) 
+	begin
+		if (!RST) ADDRESS <= INIT_ADDRESS;
+		else ADDRESS <= ADDRESS + 1;
+	end
+endmodule

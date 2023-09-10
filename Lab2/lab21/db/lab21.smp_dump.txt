@@ -1,0 +1,12 @@
+
+State Machine - |lab21|State
+Name State.H State.G State.F State.E State.D State.C State.B State.A State.I 
+State.A 0 0 0 0 0 0 0 0 0 
+State.B 0 0 0 0 0 0 1 1 0 
+State.C 0 0 0 0 0 1 0 1 0 
+State.D 0 0 0 0 1 0 0 1 0 
+State.E 0 0 0 1 0 0 0 1 0 
+State.F 0 0 1 0 0 0 0 1 0 
+State.G 0 1 0 0 0 0 0 1 0 
+State.H 1 0 0 0 0 0 0 1 0 
+State.I 0 0 0 0 0 0 0 1 1 

@@ -1,0 +1,68 @@
+module ex3lab2 (
+	input  clock, rst,
+	input  X,
+	output L1, L2, L3, L4, L5, L6, L7, L8,
+   output z
+	);
+	
+	wire w1, w2, w3, w4, w5, w6;
+ 
+reg_dff dff_1 			(.clk(clock),
+							 .reset(rst),
+							 .d(X),
+							 .q(L1)
+							);
+	assign w1 = L1;
+			 
+reg_dff dff_2 			(.clk(clock),
+							 .reset(rst),
+							 .d(w1),
+							 .q(L2)
+							);
+	assign w2 = L2;	
+			 
+reg_dff dff_3 			(.clk(clock),
+							 .reset(rst),
+							 .d(w2),
+							 .q(L3)
+							);
+	assign w3 = L3;	
+	
+reg_dff dff_4 			(.clk(clock),
+							 .reset(rst),
+							 .d(w3),
+							 .q(L4)
+							);
+							
+reg_dff dff_5 			(.clk(clock),
+							 .reset(rst),
+							 .d(~X),
+							 .q(L5)
+							);
+	assign w5 = L5;
+	
+reg_dff dff_6 			(.clk(clock),
+							 .reset(rst),
+							 .d(w5),
+							 .q(L6)
+							);
+	assign w6 = L6;
+	
+reg_dff dff_7 			(.clk(clock),
+							 .reset(rst),
+							 .d(w6),
+							 .q(L7)
+							);
+	assign w7 = L7;
+							
+reg_dff dff_8 			(.clk(clock),
+							 .reset(rst),
+							 .d(w7),
+							 .q(L8)
+							);
+
+							
+	assign z = (L4 & L3 & L2 & L1) | (L5 & L6 & L7 & L8);
+	
+endmodule
+

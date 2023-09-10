@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Rout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Rout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DINout",
+					"strict" : false
+				},
+				{
+					"name" : "Gout",
+					"strict" : false
+				},
+				{
+					"name" : "IRin",
+					"strict" : false
+				},
+				{
+					"name" : "Ain",
+					"strict" : false
+				},
+				{
+					"name" : "Gin",
+					"strict" : false
+				},
+				{
+					"name" : "AddSub",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Rin[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Resetn",
+					"strict" : false
+				},
+				{
+					"name" : "Run",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

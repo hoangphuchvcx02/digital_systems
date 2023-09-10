@@ -1,0 +1,388 @@
+$comment
+	File created using the following command:
+		vcd file Control_unit.msim.vcd -direction
+$end
+$date
+	Wed Apr 19 20:31:28 2023
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Control_unit_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 9 " IR [8:0] $end
+$var reg 1 # Resetn $end
+$var reg 1 $ Run $end
+$var wire 1 % AddSub $end
+$var wire 1 & Ain $end
+$var wire 1 ' DINout $end
+$var wire 1 ( Done $end
+$var wire 1 ) Gin $end
+$var wire 1 * Gout $end
+$var wire 1 + IRin $end
+$var wire 1 , Rin [7] $end
+$var wire 1 - Rin [6] $end
+$var wire 1 . Rin [5] $end
+$var wire 1 / Rin [4] $end
+$var wire 1 0 Rin [3] $end
+$var wire 1 1 Rin [2] $end
+$var wire 1 2 Rin [1] $end
+$var wire 1 3 Rin [0] $end
+$var wire 1 4 Rout [7] $end
+$var wire 1 5 Rout [6] $end
+$var wire 1 6 Rout [5] $end
+$var wire 1 7 Rout [4] $end
+$var wire 1 8 Rout [3] $end
+$var wire 1 9 Rout [2] $end
+$var wire 1 : Rout [1] $end
+$var wire 1 ; Rout [0] $end
+
+$scope module i1 $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 > unknown $end
+$var tri1 1 ? devclrn $end
+$var tri1 1 @ devpor $end
+$var tri1 1 A devoe $end
+$var wire 1 B ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 C IR[7]~input_o $end
+$var wire 1 D IR[0]~input_o $end
+$var wire 1 E Selector17~1_combout $end
+$var wire 1 F IR[8]~input_o $end
+$var wire 1 G IR[6]~input_o $end
+$var wire 1 H Clock~input_o $end
+$var wire 1 I Clock~inputCLKENA0_outclk $end
+$var wire 1 J Run~input_o $end
+$var wire 1 K Tstep_D.T2~0_combout $end
+$var wire 1 L Resetn~input_o $end
+$var wire 1 M Tstep_Q.T2~q $end
+$var wire 1 N Tstep_Q.T3~q $end
+$var wire 1 O Selector0~0_combout $end
+$var wire 1 P Tstep_Q.T0~q $end
+$var wire 1 Q Tstep_D.T1~0_combout $end
+$var wire 1 R Tstep_Q.T1~q $end
+$var wire 1 S Selector17~3_combout $end
+$var wire 1 T Selector17~0_combout $end
+$var wire 1 U IR[2]~input_o $end
+$var wire 1 V IR[1]~input_o $end
+$var wire 1 W IR[4]~input_o $end
+$var wire 1 X IR[3]~input_o $end
+$var wire 1 Y IR[5]~input_o $end
+$var wire 1 Z Selector17~2_combout $end
+$var wire 1 [ Selector17~4_combout $end
+$var wire 1 \ Selector16~0_combout $end
+$var wire 1 ] Selector16~1_combout $end
+$var wire 1 ^ Selector16~2_combout $end
+$var wire 1 _ Selector16~3_combout $end
+$var wire 1 ` Selector15~0_combout $end
+$var wire 1 a Selector15~1_combout $end
+$var wire 1 b Selector15~2_combout $end
+$var wire 1 c AddSub~0_combout $end
+$var wire 1 d Selector6~0_combout $end
+$var wire 1 e Selector14~0_combout $end
+$var wire 1 f Selector13~0_combout $end
+$var wire 1 g Selector13~1_combout $end
+$var wire 1 h Selector12~1_combout $end
+$var wire 1 i Selector12~0_combout $end
+$var wire 1 j Selector12~2_combout $end
+$var wire 1 k Selector11~0_combout $end
+$var wire 1 l Selector11~1_combout $end
+$var wire 1 m Selector11~2_combout $end
+$var wire 1 n Selector2~0_combout $end
+$var wire 1 o Selector10~0_combout $end
+$var wire 1 p DINout~0_combout $end
+$var wire 1 q Tstep_Q.T3~DUPLICATE_q $end
+$var wire 1 r Gout~0_combout $end
+$var wire 1 s Ain~0_combout $end
+$var wire 1 t AddSub~1_combout $end
+$var wire 1 u Selector9~1_combout $end
+$var wire 1 v Selector8~0_combout $end
+$var wire 1 w Selector8~1_combout $end
+$var wire 1 x Selector7~0_combout $end
+$var wire 1 y Selector6~1_combout $end
+$var wire 1 z Selector5~0_combout $end
+$var wire 1 { Selector4~0_combout $end
+$var wire 1 | Selector3~0_combout $end
+$var wire 1 } Selector2~1_combout $end
+$var wire 1 ~ Selector9~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b1010100 "
+1#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+1+
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0;
+0:
+09
+08
+07
+06
+05
+04
+0<
+1=
+x>
+1?
+1@
+1A
+0B
+0C
+0D
+1E
+0F
+1G
+0H
+0I
+0J
+0K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+1U
+0V
+1W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+1~
+$end
+#40000
+1$
+1J
+1Q
+1O
+#50000
+1!
+1H
+1I
+1R
+1P
+0+
+0~
+0Q
+0O
+1x
+1p
+1'
+11
+1(
+#70000
+0$
+0J
+#100000
+0!
+0H
+0I
+#150000
+1!
+1H
+1I
+0R
+0P
+1+
+1~
+0x
+0p
+0'
+01
+0(
+#200000
+0!
+0H
+0I
+#250000
+1!
+1H
+1I
+#300000
+0!
+0H
+0I
+#350000
+1!
+1H
+1I
+#390000
+b11010100 "
+b11000100 "
+b11000000 "
+b11000010 "
+b11000011 "
+1D
+1V
+0U
+0W
+1C
+1Z
+0E
+1`
+#400000
+0!
+0H
+0I
+#440000
+1$
+1J
+1Q
+1O
+#450000
+1!
+1H
+1I
+1R
+1P
+0+
+1S
+0Q
+1s
+1K
+1&
+1[
+1;
+#460000
+0$
+0J
+#500000
+0!
+0H
+0I
+#550000
+1!
+1H
+1I
+0R
+1M
+0S
+1t
+1c
+0s
+0K
+0&
+1)
+1%
+1e
+0[
+0;
+18
+#600000
+0!
+0H
+0I
+#650000
+1!
+1H
+1I
+1q
+1N
+0M
+0~
+0t
+0c
+0O
+1u
+1r
+1*
+13
+0)
+0%
+1(
+0e
+08
+#700000
+0!
+0H
+0I
+#750000
+1!
+1H
+1I
+0q
+0P
+0N
+1+
+1~
+0u
+0r
+0*
+03
+0(
+#800000
+0!
+0H
+0I
+#850000
+1!
+1H
+1I
+#900000
+0!
+0H
+0I
+#950000
+1!
+1H
+1I
+#1000000

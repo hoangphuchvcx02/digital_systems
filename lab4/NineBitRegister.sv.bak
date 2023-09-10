@@ -1,0 +1,12 @@
+module NineBitRegister(
+input clk, enable,
+input [7:0] R,
+output [7:0] Q
+);
+always@(posedge clk) begin
+	if (enable) 
+		Q <= R;
+	else
+		Q <= '0;
+end
+endmodule

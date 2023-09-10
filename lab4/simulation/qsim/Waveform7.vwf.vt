@@ -1,0 +1,599 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/18/2023 20:43:25"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Mux10_1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Mux10_1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [8:0] DIN;
+reg DINout;
+reg [8:0] G;
+reg Gout;
+reg [8:0] R0;
+reg [8:0] R1;
+reg [8:0] R2;
+reg [8:0] R3;
+reg [8:0] R4;
+reg [8:0] R5;
+reg [8:0] R6;
+reg [8:0] R7;
+reg [7:0] Rout;
+// wires                                               
+wire [8:0] Bus;
+
+// assign statements (if any)                          
+Mux10_1 i1 (
+// port map - connection between master ports and signals/registers   
+	.Bus(Bus),
+	.DIN(DIN),
+	.DINout(DINout),
+	.G(G),
+	.Gout(Gout),
+	.R0(R0),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.R4(R4),
+	.R5(R5),
+	.R6(R6),
+	.R7(R7),
+	.Rout(Rout)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// R0[ 8 ]
+initial
+begin
+	R0[8] = 1'b0;
+end 
+// R0[ 7 ]
+initial
+begin
+	R0[7] = 1'b0;
+end 
+// R0[ 6 ]
+initial
+begin
+	R0[6] = 1'b0;
+end 
+// R0[ 5 ]
+initial
+begin
+	R0[5] = 1'b0;
+end 
+// R0[ 4 ]
+initial
+begin
+	R0[4] = 1'b0;
+end 
+// R0[ 3 ]
+initial
+begin
+	R0[3] = 1'b0;
+end 
+// R0[ 2 ]
+initial
+begin
+	R0[2] = 1'b0;
+end 
+// R0[ 1 ]
+initial
+begin
+	R0[1] = 1'b0;
+end 
+// R0[ 0 ]
+initial
+begin
+	R0[0] = 1'b0;
+end 
+// R1[ 8 ]
+initial
+begin
+	R1[8] = 1'b0;
+end 
+// R1[ 7 ]
+initial
+begin
+	R1[7] = 1'b0;
+end 
+// R1[ 6 ]
+initial
+begin
+	R1[6] = 1'b0;
+end 
+// R1[ 5 ]
+initial
+begin
+	R1[5] = 1'b0;
+end 
+// R1[ 4 ]
+initial
+begin
+	R1[4] = 1'b0;
+end 
+// R1[ 3 ]
+initial
+begin
+	R1[3] = 1'b0;
+end 
+// R1[ 2 ]
+initial
+begin
+	R1[2] = 1'b0;
+end 
+// R1[ 1 ]
+initial
+begin
+	R1[1] = 1'b0;
+end 
+// R1[ 0 ]
+initial
+begin
+	R1[0] = 1'b0;
+end 
+// R2[ 8 ]
+initial
+begin
+	R2[8] = 1'b0;
+end 
+// R2[ 7 ]
+initial
+begin
+	R2[7] = 1'b0;
+end 
+// R2[ 6 ]
+initial
+begin
+	R2[6] = 1'b0;
+end 
+// R2[ 5 ]
+initial
+begin
+	R2[5] = 1'b0;
+end 
+// R2[ 4 ]
+initial
+begin
+	R2[4] = 1'b0;
+end 
+// R2[ 3 ]
+initial
+begin
+	R2[3] = 1'b0;
+end 
+// R2[ 2 ]
+initial
+begin
+	R2[2] = 1'b0;
+end 
+// R2[ 1 ]
+initial
+begin
+	R2[1] = 1'b0;
+end 
+// R2[ 0 ]
+initial
+begin
+	R2[0] = 1'b0;
+end 
+// R3[ 8 ]
+initial
+begin
+	R3[8] = 1'b0;
+end 
+// R3[ 7 ]
+initial
+begin
+	R3[7] = 1'b0;
+end 
+// R3[ 6 ]
+initial
+begin
+	R3[6] = 1'b0;
+end 
+// R3[ 5 ]
+initial
+begin
+	R3[5] = 1'b0;
+end 
+// R3[ 4 ]
+initial
+begin
+	R3[4] = 1'b0;
+end 
+// R3[ 3 ]
+initial
+begin
+	R3[3] = 1'b0;
+end 
+// R3[ 2 ]
+initial
+begin
+	R3[2] = 1'b0;
+end 
+// R3[ 1 ]
+initial
+begin
+	R3[1] = 1'b0;
+end 
+// R3[ 0 ]
+initial
+begin
+	R3[0] = 1'b0;
+end 
+// R4[ 8 ]
+initial
+begin
+	R4[8] = 1'b0;
+end 
+// R4[ 7 ]
+initial
+begin
+	R4[7] = 1'b0;
+end 
+// R4[ 6 ]
+initial
+begin
+	R4[6] = 1'b0;
+end 
+// R4[ 5 ]
+initial
+begin
+	R4[5] = 1'b0;
+end 
+// R4[ 4 ]
+initial
+begin
+	R4[4] = 1'b0;
+end 
+// R4[ 3 ]
+initial
+begin
+	R4[3] = 1'b0;
+end 
+// R4[ 2 ]
+initial
+begin
+	R4[2] = 1'b0;
+end 
+// R4[ 1 ]
+initial
+begin
+	R4[1] = 1'b0;
+end 
+// R4[ 0 ]
+initial
+begin
+	R4[0] = 1'b0;
+end 
+// R5[ 8 ]
+initial
+begin
+	R5[8] = 1'b0;
+end 
+// R5[ 7 ]
+initial
+begin
+	R5[7] = 1'b0;
+end 
+// R5[ 6 ]
+initial
+begin
+	R5[6] = 1'b0;
+end 
+// R5[ 5 ]
+initial
+begin
+	R5[5] = 1'b0;
+end 
+// R5[ 4 ]
+initial
+begin
+	R5[4] = 1'b0;
+end 
+// R5[ 3 ]
+initial
+begin
+	R5[3] = 1'b0;
+end 
+// R5[ 2 ]
+initial
+begin
+	R5[2] = 1'b0;
+end 
+// R5[ 1 ]
+initial
+begin
+	R5[1] = 1'b0;
+end 
+// R5[ 0 ]
+initial
+begin
+	R5[0] = 1'b0;
+end 
+// R6[ 8 ]
+initial
+begin
+	R6[8] = 1'b0;
+end 
+// R6[ 7 ]
+initial
+begin
+	R6[7] = 1'b0;
+end 
+// R6[ 6 ]
+initial
+begin
+	R6[6] = 1'b0;
+end 
+// R6[ 5 ]
+initial
+begin
+	R6[5] = 1'b0;
+end 
+// R6[ 4 ]
+initial
+begin
+	R6[4] = 1'b0;
+end 
+// R6[ 3 ]
+initial
+begin
+	R6[3] = 1'b0;
+end 
+// R6[ 2 ]
+initial
+begin
+	R6[2] = 1'b0;
+end 
+// R6[ 1 ]
+initial
+begin
+	R6[1] = 1'b0;
+end 
+// R6[ 0 ]
+initial
+begin
+	R6[0] = 1'b0;
+end 
+// R7[ 8 ]
+initial
+begin
+	R7[8] = 1'b0;
+	R7[8] = #460000 1'b1;
+	R7[8] = #230000 1'b0;
+end 
+// R7[ 7 ]
+initial
+begin
+	R7[7] = 1'b0;
+	R7[7] = #460000 1'b1;
+	R7[7] = #230000 1'b0;
+end 
+// R7[ 6 ]
+initial
+begin
+	R7[6] = 1'b0;
+	R7[6] = #460000 1'b1;
+	R7[6] = #230000 1'b0;
+end 
+// R7[ 5 ]
+initial
+begin
+	R7[5] = 1'b0;
+	R7[5] = #460000 1'b1;
+	R7[5] = #230000 1'b0;
+end 
+// R7[ 4 ]
+initial
+begin
+	R7[4] = 1'b0;
+end 
+// R7[ 3 ]
+initial
+begin
+	R7[3] = 1'b0;
+end 
+// R7[ 2 ]
+initial
+begin
+	R7[2] = 1'b0;
+end 
+// R7[ 1 ]
+initial
+begin
+	R7[1] = 1'b0;
+end 
+// R7[ 0 ]
+initial
+begin
+	R7[0] = 1'b0;
+end 
+// G[ 8 ]
+initial
+begin
+	G[8] = 1'b0;
+end 
+// G[ 7 ]
+initial
+begin
+	G[7] = 1'b0;
+end 
+// G[ 6 ]
+initial
+begin
+	G[6] = 1'b0;
+	G[6] = #60000 1'b1;
+	G[6] = #80000 1'b0;
+end 
+// G[ 5 ]
+initial
+begin
+	G[5] = 1'b0;
+end 
+// G[ 4 ]
+initial
+begin
+	G[4] = 1'b0;
+end 
+// G[ 3 ]
+initial
+begin
+	G[3] = 1'b0;
+	G[3] = #60000 1'b1;
+	G[3] = #80000 1'b0;
+end 
+// G[ 2 ]
+initial
+begin
+	G[2] = 1'b0;
+end 
+// G[ 1 ]
+initial
+begin
+	G[1] = 1'b0;
+	G[1] = #60000 1'b1;
+	G[1] = #80000 1'b0;
+end 
+// G[ 0 ]
+initial
+begin
+	G[0] = 1'b0;
+end 
+// DIN[ 8 ]
+initial
+begin
+	DIN[8] = 1'b0;
+end 
+// DIN[ 7 ]
+initial
+begin
+	DIN[7] = 1'b0;
+end 
+// DIN[ 6 ]
+initial
+begin
+	DIN[6] = 1'b0;
+end 
+// DIN[ 5 ]
+initial
+begin
+	DIN[5] = 1'b0;
+end 
+// DIN[ 4 ]
+initial
+begin
+	DIN[4] = 1'b0;
+end 
+// DIN[ 3 ]
+initial
+begin
+	DIN[3] = 1'b0;
+	DIN[3] = #240000 1'b1;
+	DIN[3] = #70000 1'b0;
+end 
+// DIN[ 2 ]
+initial
+begin
+	DIN[2] = 1'b0;
+end 
+// DIN[ 1 ]
+initial
+begin
+	DIN[1] = 1'b0;
+end 
+// DIN[ 0 ]
+initial
+begin
+	DIN[0] = 1'b0;
+	DIN[0] = #240000 1'b1;
+	DIN[0] = #70000 1'b0;
+end 
+// Rout[ 7 ]
+initial
+begin
+	Rout[7] = 1'b0;
+end 
+// Rout[ 6 ]
+initial
+begin
+	Rout[6] = 1'b0;
+end 
+// Rout[ 5 ]
+initial
+begin
+	Rout[5] = 1'b0;
+end 
+// Rout[ 4 ]
+initial
+begin
+	Rout[4] = 1'b0;
+end 
+// Rout[ 3 ]
+initial
+begin
+	Rout[3] = 1'b0;
+end 
+// Rout[ 2 ]
+initial
+begin
+	Rout[2] = 1'b0;
+end 
+// Rout[ 1 ]
+initial
+begin
+	Rout[1] = 1'b0;
+end 
+// Rout[ 0 ]
+initial
+begin
+	Rout[0] = 1'b0;
+	Rout[0] = #460000 1'b1;
+	Rout[0] = #190000 1'b0;
+end 
+
+// Gout
+initial
+begin
+	Gout = 1'b0;
+	Gout = #60000 1'b1;
+	Gout = #80000 1'b0;
+	Gout = #460000 1'b1;
+	Gout = #50000 1'b0;
+end 
+
+// DINout
+initial
+begin
+	DINout = 1'b0;
+	DINout = #240000 1'b1;
+	DINout = #70000 1'b0;
+end 
+endmodule
+

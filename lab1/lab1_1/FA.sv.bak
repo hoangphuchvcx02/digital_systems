@@ -1,0 +1,74 @@
+module FA(
+	input [7:0] A,B,
+	input Cin,
+	output [7:0] S,
+	output Cout,
+	output V
+);
+
+	wire c0,c1,c2,c3,c4,c5,c6,c7 
+
+FA a0(
+	.A(A[0]),
+	.B(b[0]),
+	.Cin(Cin)
+	.S(S[0]),
+	.Cout(c0)
+);
+
+FA a1(
+	.A(A[1]),
+	.B(b[1]),
+	.Cin(Cin)
+	.S(S[1]),
+	.Cout(c1)
+);
+FA a2(
+	.A(A[2]),
+	.B(b[2]),
+	.Cin(Cin)
+	.S(S[2]),
+	.Cout(c2)
+);
+FA a3(
+	.A(A[3]),
+	.B(b[3]),
+	.Cin(Cin)
+	.S(S[3]),
+	.Cout(c3)
+);
+FA a4(
+	.A(A[4]),
+	.B(b[4]),
+	.Cin(Cin)
+	.S(S[4]),
+	.Cout(c4)
+);
+FA a5(
+	.A(A[5]),
+	.B(b[5]),
+	.Cin(Cin)
+	.S(S[5]),
+	.Cout(c5)
+);
+FA a6(
+	.A(A[6]),
+	.B(b[6]),
+	.Cin(Cin)
+	.S(S[6]),
+	.Cout(c6)
+);
+FA a7(
+	.A(A[7]),
+	.B(b[7]),
+	.Cin(Cin)
+	.S(S[7]),
+	.Cout(c7)
+);
+
+	assign S = A^B^Cin;
+	assign Cout = (A&B) | (B&Cin) | (Cin&A);
+	assign V = c6^c7;
+endmodule
+
+

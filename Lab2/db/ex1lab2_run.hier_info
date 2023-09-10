@@ -1,0 +1,266 @@
+|ex1lab2_run
+CLOCK2_50 => ~NO_FANOUT~
+CLOCK3_50 => ~NO_FANOUT~
+CLOCK4_50 => ~NO_FANOUT~
+CLOCK_50 => ~NO_FANOUT~
+KEY[0] => KEY[0].IN1
+KEY[1] => KEY[1].IN1
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => SW[0].IN1
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] << ex1lab2:gate.state_out
+LEDR[1] << ex1lab2:gate.state_out
+LEDR[2] << ex1lab2:gate.state_out
+LEDR[3] << ex1lab2:gate.state_out
+LEDR[4] << ex1lab2:gate.state_out
+LEDR[5] << ex1lab2:gate.state_out
+LEDR[6] << ex1lab2:gate.state_out
+LEDR[7] << ex1lab2:gate.state_out
+LEDR[8] << ex1lab2:gate.state_out
+LEDR[9] << ex1lab2:gate.z
+HEX0[0] << <GND>
+HEX0[1] << <GND>
+HEX0[2] << <GND>
+HEX0[3] << <GND>
+HEX0[4] << <GND>
+HEX0[5] << <GND>
+HEX0[6] << <GND>
+HEX1[0] << <GND>
+HEX1[1] << <GND>
+HEX1[2] << <GND>
+HEX1[3] << <GND>
+HEX1[4] << <GND>
+HEX1[5] << <GND>
+HEX1[6] << <GND>
+HEX2[0] << <GND>
+HEX2[1] << <GND>
+HEX2[2] << <GND>
+HEX2[3] << <GND>
+HEX2[4] << <GND>
+HEX2[5] << <GND>
+HEX2[6] << <GND>
+HEX3[0] << <GND>
+HEX3[1] << <GND>
+HEX3[2] << <GND>
+HEX3[3] << <GND>
+HEX3[4] << <GND>
+HEX3[5] << <GND>
+HEX3[6] << <GND>
+HEX4[0] << <GND>
+HEX4[1] << <GND>
+HEX4[2] << <GND>
+HEX4[3] << <GND>
+HEX4[4] << <GND>
+HEX4[5] << <GND>
+HEX4[6] << <GND>
+HEX5[0] << <GND>
+HEX5[1] << <GND>
+HEX5[2] << <GND>
+HEX5[3] << <GND>
+HEX5[4] << <GND>
+HEX5[5] << <GND>
+HEX5[6] << <GND>
+DRAM_ADDR[0] << <GND>
+DRAM_ADDR[1] << <GND>
+DRAM_ADDR[2] << <GND>
+DRAM_ADDR[3] << <GND>
+DRAM_ADDR[4] << <GND>
+DRAM_ADDR[5] << <GND>
+DRAM_ADDR[6] << <GND>
+DRAM_ADDR[7] << <GND>
+DRAM_ADDR[8] << <GND>
+DRAM_ADDR[9] << <GND>
+DRAM_ADDR[10] << <GND>
+DRAM_ADDR[11] << <GND>
+DRAM_ADDR[12] << <GND>
+DRAM_BA[0] << <GND>
+DRAM_BA[1] << <GND>
+DRAM_CAS_N << <GND>
+DRAM_CKE << <GND>
+DRAM_CLK << <GND>
+DRAM_CS_N << <GND>
+DRAM_DQ[0] <> <UNC>
+DRAM_DQ[1] <> <UNC>
+DRAM_DQ[2] <> <UNC>
+DRAM_DQ[3] <> <UNC>
+DRAM_DQ[4] <> <UNC>
+DRAM_DQ[5] <> <UNC>
+DRAM_DQ[6] <> <UNC>
+DRAM_DQ[7] <> <UNC>
+DRAM_DQ[8] <> <UNC>
+DRAM_DQ[9] <> <UNC>
+DRAM_DQ[10] <> <UNC>
+DRAM_DQ[11] <> <UNC>
+DRAM_DQ[12] <> <UNC>
+DRAM_DQ[13] <> <UNC>
+DRAM_DQ[14] <> <UNC>
+DRAM_DQ[15] <> <UNC>
+DRAM_LDQM << <GND>
+DRAM_RAS_N << <GND>
+DRAM_UDQM << <GND>
+DRAM_WE_N << <GND>
+TD_CLK27 => ~NO_FANOUT~
+TD_DATA[0] => ~NO_FANOUT~
+TD_DATA[1] => ~NO_FANOUT~
+TD_DATA[2] => ~NO_FANOUT~
+TD_DATA[3] => ~NO_FANOUT~
+TD_DATA[4] => ~NO_FANOUT~
+TD_DATA[5] => ~NO_FANOUT~
+TD_DATA[6] => ~NO_FANOUT~
+TD_DATA[7] => ~NO_FANOUT~
+TD_HS => ~NO_FANOUT~
+TD_RESET_N << <GND>
+TD_VS => ~NO_FANOUT~
+VGA_BLANK_N << <GND>
+VGA_B[0] << <GND>
+VGA_B[1] << <GND>
+VGA_B[2] << <GND>
+VGA_B[3] << <GND>
+VGA_B[4] << <GND>
+VGA_B[5] << <GND>
+VGA_B[6] << <GND>
+VGA_B[7] << <GND>
+VGA_CLK << <GND>
+VGA_G[0] << <GND>
+VGA_G[1] << <GND>
+VGA_G[2] << <GND>
+VGA_G[3] << <GND>
+VGA_G[4] << <GND>
+VGA_G[5] << <GND>
+VGA_G[6] << <GND>
+VGA_G[7] << <GND>
+VGA_HS << <GND>
+VGA_R[0] << <GND>
+VGA_R[1] << <GND>
+VGA_R[2] << <GND>
+VGA_R[3] << <GND>
+VGA_R[4] << <GND>
+VGA_R[5] << <GND>
+VGA_R[6] << <GND>
+VGA_R[7] << <GND>
+VGA_SYNC_N << <GND>
+VGA_VS << <GND>
+AUD_ADCDAT => ~NO_FANOUT~
+AUD_ADCLRCK <> <UNC>
+AUD_BCLK <> <UNC>
+AUD_DACDAT << <GND>
+AUD_DACLRCK <> <UNC>
+AUD_XCK << <GND>
+PS2_CLK <> <UNC>
+PS2_CLK2 <> <UNC>
+PS2_DAT <> <UNC>
+PS2_DAT2 <> <UNC>
+ADC_CONVST << <GND>
+ADC_DIN << <GND>
+ADC_DOUT => ~NO_FANOUT~
+ADC_SCLK << <GND>
+FPGA_I2C_SCLK << <GND>
+FPGA_I2C_SDAT <> <UNC>
+IRDA_RXD => ~NO_FANOUT~
+IRDA_TXD << <GND>
+
+
+|ex1lab2_run|ex1lab2:gate
+w[0] => Y5.IN1
+w[0] => Y6.IN1
+w[0] => Y7.IN1
+w[0] => Y8.IN1
+w[0] => Y1.IN1
+w[0] => Y2.IN1
+w[0] => Y3.IN1
+w[0] => Y4.IN1
+clk[0] => clk[0].IN9
+rst[0] => rst[0].IN9
+z[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+state_out[0] <= D_flipflop:ff0.Q
+state_out[1] <= D_flipflop:ff1.Q
+state_out[2] <= D_flipflop:ff2.Q
+state_out[3] <= D_flipflop:ff3.Q
+state_out[4] <= D_flipflop:ff4.Q
+state_out[5] <= D_flipflop:ff5.Q
+state_out[6] <= D_flipflop:ff6.Q
+state_out[7] <= D_flipflop:ff7.Q
+state_out[8] <= D_flipflop:ff8.Q
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff0
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff1
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff2
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff3
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff4
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff5
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff6
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff7
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1lab2_run|ex1lab2:gate|D_flipflop:ff8
+clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_bar <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

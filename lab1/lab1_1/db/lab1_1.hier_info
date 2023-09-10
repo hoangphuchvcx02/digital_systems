@@ -1,0 +1,257 @@
+|lab1_1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+CLK_system => CLK_system.IN4
+rst_n_system => rst_n_system.IN4
+S[0] << adder2reg[0].DB_MAX_OUTPUT_PORT_TYPE
+S[1] << adder2reg[1].DB_MAX_OUTPUT_PORT_TYPE
+S[2] << adder2reg[2].DB_MAX_OUTPUT_PORT_TYPE
+S[3] << adder2reg[3].DB_MAX_OUTPUT_PORT_TYPE
+S[4] << adder2reg[4].DB_MAX_OUTPUT_PORT_TYPE
+S[5] << adder2reg[5].DB_MAX_OUTPUT_PORT_TYPE
+S[6] << adder2reg[6].DB_MAX_OUTPUT_PORT_TYPE
+S[7] << adder2reg[7].DB_MAX_OUTPUT_PORT_TYPE
+Cout << D_flipflop:D1.Q
+V << D_flipflop:D0.Q
+
+
+|lab1_1|register:r0
+rst_n => reg_data[0].ACLR
+rst_n => reg_data[1].ACLR
+rst_n => reg_data[2].ACLR
+rst_n => reg_data[3].ACLR
+rst_n => reg_data[4].ACLR
+rst_n => reg_data[5].ACLR
+rst_n => reg_data[6].ACLR
+rst_n => reg_data[7].ACLR
+clk_i => reg_data[0].CLK
+clk_i => reg_data[1].CLK
+clk_i => reg_data[2].CLK
+clk_i => reg_data[3].CLK
+clk_i => reg_data[4].CLK
+clk_i => reg_data[5].CLK
+clk_i => reg_data[6].CLK
+clk_i => reg_data[7].CLK
+data_in[0] => reg_data[0].DATAIN
+data_in[1] => reg_data[1].DATAIN
+data_in[2] => reg_data[2].DATAIN
+data_in[3] => reg_data[3].DATAIN
+data_in[4] => reg_data[4].DATAIN
+data_in[5] => reg_data[5].DATAIN
+data_in[6] => reg_data[6].DATAIN
+data_in[7] => reg_data[7].DATAIN
+data_out[0] <= reg_data[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= reg_data[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= reg_data[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= reg_data[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= reg_data[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= reg_data[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= reg_data[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= reg_data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1_1|register:r1
+rst_n => reg_data[0].ACLR
+rst_n => reg_data[1].ACLR
+rst_n => reg_data[2].ACLR
+rst_n => reg_data[3].ACLR
+rst_n => reg_data[4].ACLR
+rst_n => reg_data[5].ACLR
+rst_n => reg_data[6].ACLR
+rst_n => reg_data[7].ACLR
+clk_i => reg_data[0].CLK
+clk_i => reg_data[1].CLK
+clk_i => reg_data[2].CLK
+clk_i => reg_data[3].CLK
+clk_i => reg_data[4].CLK
+clk_i => reg_data[5].CLK
+clk_i => reg_data[6].CLK
+clk_i => reg_data[7].CLK
+data_in[0] => reg_data[0].DATAIN
+data_in[1] => reg_data[1].DATAIN
+data_in[2] => reg_data[2].DATAIN
+data_in[3] => reg_data[3].DATAIN
+data_in[4] => reg_data[4].DATAIN
+data_in[5] => reg_data[5].DATAIN
+data_in[6] => reg_data[6].DATAIN
+data_in[7] => reg_data[7].DATAIN
+data_out[0] <= reg_data[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= reg_data[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= reg_data[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= reg_data[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= reg_data[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= reg_data[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= reg_data[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= reg_data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1_1|adder8bit:add0
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+S[0] <= FA:a0.S
+S[1] <= FA:a1.S
+S[2] <= FA:a2.S
+S[3] <= FA:a3.S
+S[4] <= FA:a4.S
+S[5] <= FA:a5.S
+S[6] <= FA:a6.S
+S[7] <= FA:a7.S
+Cout <= <GND>
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1_1|adder8bit:add0|FA:a0
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a5
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a6
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|adder8bit:add0|FA:a7
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
+
+
+|lab1_1|D_flipflop:D0
+clk_i => Q~reg0.CLK
+rst_n => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1_1|D_flipflop:D1
+clk_i => Q~reg0.CLK
+rst_n => Q~reg0.ACLR
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

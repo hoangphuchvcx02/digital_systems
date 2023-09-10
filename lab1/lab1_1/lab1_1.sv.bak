@@ -1,0 +1,16 @@
+module lab1_1 (clk_i,rst,Q,D)
+	input rst;
+	input clk_i;
+	parameter N=8;
+	input [N-1:0] data_in;
+	output [N-1:0] data_out;
+	reg [N-1:0] reg_data;
+	
+	always @(posedge clk_i, rst) begin
+		if (~rst)
+			reg_data <= 8'b00000000;
+		else 
+			reg_data <= data_in
+	end
+	assign data_out <= reg_data
+endmodule 
