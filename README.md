@@ -1,2 +1,2 @@
-# digital_systems
-Work with FPGA
+# digital_systems work with FPGA
+
